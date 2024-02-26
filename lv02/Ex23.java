@@ -1,0 +1,34 @@
+package lv02;
+
+public class Ex23 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 보조제어문 : break, continue
+
+		// 1) break : (자신이 속한)반복문을 즉시 종료
+		// 2) continue : (자신이 속한) 반복문의 시작점으로 돌어가게 함
+
+		int x = 10;
+		while (true) {
+			System.out.println(x);
+			int y = 20;
+			while (true) {
+				System.out.println(y);
+				if (x == 15) {
+					continue;
+				}
+				y++;
+				break;
+			}
+			x++;
+		}
+		
+		/*
+		 * x = 10
+		 * y = 20
+		 * 10
+		 * 
+		 */
+	}
+}
